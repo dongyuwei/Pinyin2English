@@ -15,6 +15,14 @@ Chinese Pinyin to English Dictionary for Mac Dictionary.app
 Try looking up the meaning of these Pinyin as a test: `gaoji` or `ceshi` 
 * Launch Dictionary and type the Pinyin into the search field
 
+## Snapshot
+![setup](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/setup.png)
+![pinyin](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/pinyin.png)
+![gaoji](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/gaoji.png)
+![binmayong](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/binmayong.png)
+![roujiamo](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/roujiamo.png)
+
+
 ### Building
 
 1. Download `Additional_Tools_for_Xcode_9.dmg` from apple.com and copy `Dictionary Development Kit` to `/DevTools/Utilities/Dictionary Development Kit`
