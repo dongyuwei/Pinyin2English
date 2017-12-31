@@ -14,9 +14,13 @@ Chinese Pinyin to English Dictionary for Mac Dictionary.app
 
 Try looking up the meaning of these Pinyin as a test: `gaoji` or `ceshi` 
 * Launch Dictionary and type the Pinyin into the search field
+* Right-click on the Pinyin and choose the _Look Up_ menu item  
+  (on a track pad you can also use a Three Finger Tap or Force Click)
+* Press Cmd+Ctrl+D whilst pointing the mouse cursor at the Pinyin to display a popup
 
 ## Snapshot
 ![setup](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/setup.png)
+![contextmenulookup](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/contextmenulookup.png)
 ![pinyin](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/pinyin.png)
 ![gaoji](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/gaoji.png)
 ![binmayong](https://github.com/dongyuwei/Pinyin2English/blob/master/snapshot/binmayong.png)
