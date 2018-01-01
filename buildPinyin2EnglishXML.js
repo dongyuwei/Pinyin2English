@@ -12,9 +12,13 @@ const buildDictEntry = (pinyin, translations) => {
 
 const buildTranslationItems = (translations) => {
     const items = translations.map((translation) => {
-        return `<li><span class="meaning">${escapeHTML(translation)}</span></li>`;
+        return `<li class="${hasChinsesCharacter(translation) ? 'cn': ''}"><span class="meaning">${escapeHTML(translation)}</span></li>`;
     }).join('\n\t');
     return `<ol class='translations'>\n\t${items}\n\t</ol>`;
+};
+
+const hasChinsesCharacter = (translation) => {
+    return translation.match(/[\u3400-\u9FBF]/);
 };
 
 const escapeHTML = (str) => {
@@ -54,9 +58,13 @@ const buildDictEntries = (dict) => {
     return entries.join('\n');
 };
 
-const dictXML = `<?xml version="1.0" encoding="UTF-8"?>
-    <d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">
-        ${buildDictEntries(cedict)}
-    </d:dictionary>`;
+const buildDictionary = (dict) => {
+    const dictXML = `<?xml version="1.0" encoding="UTF-8"?>
+        <d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">
+            ${buildDictEntries(dict)}
+        </d:dictionary>`;
 
-fs.writeFileSync('./Pinyin2English.xml', dictXML, 'utf-8');
+    fs.writeFileSync('./Pinyin2English.xml', dictXML, 'utf-8');
+};
+
+buildDictionary(cedict);

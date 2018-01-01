@@ -6,5 +6,17 @@ h1 {
 }
 
 .headword {
-	color: #95e6cb;
+	color: #c2d94c;
+}
+
+li {
+	padding-left: 10px;
+}
+
+li.cn {
+	padding-left: 5px;
+}
+
+.cn .meaning {
+	color: #5ccfe6;
 }
