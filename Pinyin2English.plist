@@ -14,22 +14,5 @@
 	<string>cedict https://cc-cedict.org/ https://github.com/dongyuwei</string>
 	<key>DCSDictionaryManufacturerName</key>
 	<string>https://github.com/dongyuwei</string>
-	<key>DCSDictionaryFrontMatterReferenceID</key>
-	<string>front_back_matter</string>
-	<key>DCSDictionaryPrefsHTML</key>
-	<string>Pinyin2EnglishDictionary_prefs.html</string>
-	<key>DCSDictionaryXSL</key>
-	<string>Pinyin2EnglishDictionary.xsl</string>
-	<key>DCSDictionaryDefaultPrefs</key>
-	<dict>
-		<key>pronunciation</key>
-		<string>0</string>
-		<key>display-column</key>
-		<string>1</string>
-		<key>display-picture</key>
-		<string>1</string>
-		<key>version</key>
-		<string>1</string>
-	</dict>
 </dict>
 </plist>
