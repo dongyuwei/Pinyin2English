@@ -23,12 +23,6 @@ const hasChinsesCharacter = (translation) => {
 
 const escapeHTML = (str) => {
     const escapeChars = {
-        '¢' : 'cent',
-        '£' : 'pound',
-        '¥' : 'yen',
-        '€': 'euro',
-        '©' :'copy',
-        '®' : 'reg',
         '<' : 'lt',
         '>' : 'gt',
         '"' : 'quot',
