@@ -27,19 +27,11 @@ const escapeHTML = (str) => {
         '>' : 'gt',
         '"' : 'quot',
         '&' : 'amp',
-        '\'' : '#39'
+        '\'': 'apos'
     };
-      
-    let regexString = '[';
-    for(var key in escapeChars) {
-        regexString += key;
-    }
-    regexString += ']';
 
-    let regex = new RegExp( regexString, 'g');
-
-    return str.replace(regex, function(m) {
-        return '&' + escapeChars[m] + ';';
+    return str.replace(/[<>"&']/g, function(c) {
+        return '&' + escapeChars[c] + ';';
     });
 };
 
